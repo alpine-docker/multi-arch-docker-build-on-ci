@@ -18,5 +18,5 @@ prepare-old: install
 build-push:
 	docker buildx build --push \
 		--build-arg CI_NAME=${CI_NAME} \
-		--platform linux/arm/v7,linux/arm64/v8,linux/amd64 \
+		--platform linux/amd64,linux/arm/v7,linux/arm64/v8,linux/arm/v6,linux/ppc64le,linux/s390x \
 		-t ${IMAGE_NAME}:${VERSION}-${CI_NAME} .
