@@ -11,10 +11,6 @@ install:
 prepare: install
 	docker buildx create --use
 
-prepare-old: install
-	docker context create old-style
-	docker buildx create old-style --use
-
 build-push:
 	docker buildx build --push \
 		--build-arg CI_NAME=${CI_NAME} \
