@@ -1,4 +1,4 @@
-BUILDX_VER=v0.3.0
+BUILDX_VER=v0.5.1
 CI_NAME?=local
 IMAGE_NAME=alpine/demo-multi-arch
 VERSION?=latest
