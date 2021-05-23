@@ -10,6 +10,7 @@ install:
 
 prepare: install
 	docker buildx create --use
+	docker buildx inspect
 
 build-push:
 	docker buildx build --push \
