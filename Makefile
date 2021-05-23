@@ -1,6 +1,6 @@
 BUILDX_VER=v0.3.0
 CI_NAME?=local
-IMAGE_NAME=jdrouet/docker-on-ci
+IMAGE_NAME=alpine/demo-multi-arch
 VERSION?=latest
 
 install:
